@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+.banner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("img/back.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.banner h2{
+    font-size: 7em;
+    padding-top: 100px;
+    color: #fff;
+}
+
+.banner .clouds{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner .clouds img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(6s * var(--i)) linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(-150%);
+    }
+    100%{
+        transform: translateX(150%);
+    }
+}
+
+section{
+    position: relative;
+    padding: 75px 100px;
+    text-align: center;
+}
+
+section h2{
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+
+section p{
+    font-size: 2em;
+}

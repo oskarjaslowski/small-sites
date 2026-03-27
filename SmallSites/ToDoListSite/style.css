@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+*{
+    font-family: 'Golos Text', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #111;
+    color: #fff;
+    transition: .2s;
+}
+
+body{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    overflow-x: hidden;
+}
+
+.input > input{
+    font-size: 1em;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #222;
+    color-scheme: dark;
+}
+
+.input > button{
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #222;
+}
+
+#date-picker{
+    margin-left: 20px;
+}
+
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+}
+
+h2{
+    font-size: 5em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#todo-list > div{
+    padding-top: 10px;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+#todo-list > div > input{
+    font-size: 0.5em;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #222;
+    color-scheme: dark;
+}
+
+#todo-list > div > button{
+    position: absolute;
+    font-size: 1em;
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #222;
+    
+}
+
+.input > button:hover{
+    background: #333;
+    cursor: pointer;
+}
+
+#todo-list > div > button:hover{
+    background: #333;
+    cursor: pointer;
+}
+
+.delete{
+    left: 750px;
+}
+
+.edit{
+    left: 650px;
+}
+
+.foot{
+    height: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #fff; 
+}
+
+@media (max-width: 950px) {
+    #todo-list > div{
+        font-size: 1.5em;
+    }
+    .delete{
+        left: 580px;
+    }
+    .edit{
+        left: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    #todo-list > div{
+        font-size: 1.1em;
+    }
+    .delete{
+        left: 460px;
+    }
+    .edit{
+        left: 390px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    #todo-list > div{
+        font-size: 0.9em;
+    }
+    .delete{
+        left: 360px;
+    }
+    .edit{
+        left: 300px;
+    }
+    .input > button{
+        font-size: 0.7em;
+    }
+    .input > input{
+        font-size: 0.7em;
+    }
+    h2{
+        font-size: 4em;
+    }
+}

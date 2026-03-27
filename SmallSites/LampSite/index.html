@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEX Lamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" onclick="toggleBtn2()" class="menu-img" draggable="false" (dragstart)="false">
+                <li class="dropdown dropdown-7">
+                     
+                    <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                      <li class="dropdown_item-1 unselectable">BRIGHTEST</li>
+                      <li class="dropdown_item-2 unselectable">STUNNING</li>
+                      <li class="dropdown_item-3 unselectable">EXCLUSIVE</li>
+                        <li class="dropdown_item-4 unselectable">BUY LAMP</li>
+                    </ul>
+                  </li>
+            <img src="images/logo.png" class="logo unselectable" draggable="false" (dragstart)="false">
+            <ul>
+                <li><a class="unselectable">BRIGHTEST</a></li>
+                <li><a class="unselectable">STUNNING</a></li>
+                <li><a class="unselectable">EXCLUSIVE</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+        <div class="lamp-container">
+            <img src="images/lamp.png " onclick="toggleBtn()" class="lamp" draggable="false" (dragstart)="false" class="transformed">
+            <img src="images/light.png" onclick="toggleBtn()" class="light" id="light" draggable="false" (dragstart)="false" class="transformed">
+        </div>
+        <div class="text-container">
+            <h1 class="unselectable">HEX is Your Lucky Number!</h1>
+            <p class="unselectable"><br>Do you have a problem with low light quality in your room?<br>
+                If so, you've come to the right place!<br><br>
+                We have the perfect thing for you: HEX Lamp.<br>
+                That will illuminate your room perfectly!<br><br>
+                Our lamps consist of seven light panels<br>
+                and are the best decoration for any room in the house!<br><br>
+                If this convinced you:</p>
+            <a onclick="toggleBtn()" class="unselectable">BUY OUR PRODUCT HERE!</a>
+        </div>
+    </div>
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+:root{
+    --g1:#FF7777;
+    --g2:#7777FF;
+    --g3:#77FF77;
+}
+@keyframes background-pan {
+    from{
+        background-position: 0% center;
+    }
+    to{
+        background-position: -200% center;
+    }
+}
+body{
+    animation: background-pan 10s linear infinite;
+    background: linear-gradient(to right, var(--g1),var(--g2),var(--g3),var(--g1));
+    background-size: 200%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+}
+
+#tiles{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+.tile{
+    position: relative;
+}
+
+.tile::before{
+    background-color: rgb(20,20,20);
+    content:"";
+    position: absolute;
+    inset:0.5px;
+}
+
+.btn{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-size: 50px;
+    user-select: none;
+    border: 5px solid rgba(255,255,255,0.4);
+    padding: 15px;
+    left: 50%;
+    top: 80%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.4);
+    transition: .5s;
+    text-decoration: none;
+    z-index: 99;
+}
+
+.btn:hover{
+    background: rgba(0,0,0,0.4);
+}
+
+.header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-size: 100px;
+    color: rgba(255,255,255,0.5);
+    padding-bottom: 15px;
+    user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(255,255,255,0.2);
+    border-bottom: 5px solid ;
+    pointer-events: none;
+    z-index: 99;
+}
+
+@media (max-width:800px) {
+    .header{
+        font-size: 12vw;
+    }
+}

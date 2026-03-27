@@ -1,116 +1,92 @@
-# 🌐 SmallSites (React + TypeScript)
+# 🌐 SmallSites
 
 ## 📌 Author
 
 Oskar Jasłowski
 
-This is a **personal project** created to experiment with building and organizing multiple small web pages within a single application.
+This is a **personal project** consisting of a collection of small, independent front-end websites.
 
 ---
 
 ## 🎯 Project Overview
 
-**SmallSites** is a lightweight multi-page web application built using React and TypeScript.
+**SmallSites** is a bundle of multiple mini web projects built using **HTML, CSS, and JavaScript**.
 
-The project focuses on creating and managing a collection of small, independent “mini-sites” within one unified structure. Each section can represent a different idea, layout, or feature set.
+Each folder represents a separate, self-contained “site” focused on a specific idea, animation, or UI concept. The goal of this project is experimentation, creativity, and practicing front-end fundamentals.
 
-It serves as a sandbox for testing UI concepts, layouts, and reusable components.
-
----
-
-## 🕹️ Features
-
-### 🧩 Modular Structure
-
-* Independent mini-pages (small sites)
-* Reusable React components
-* Scalable project organization
-
-### 🧭 Navigation
-
-* Simple and intuitive navigation between sections
-* Multi-page SPA structure
-
-### 🎨 UI Experiments
-
-* Different layouts per section
-* Flexible styling approach
-* Space for testing new design ideas
+There is no single application here — instead, it’s a **collection of standalone mini-sites**.
 
 ---
 
-## 🖥️ User Interface
+## 🧩 Included Mini-Sites
 
-The application is structured as a **multi-page SPA**, where each section behaves like a small standalone site.
+Each directory contains its own `index.html` and can be opened independently.
 
----
+Examples include:
 
-## ⚙️ Main Sections
-
-* 🏠 Home
-* 📄 Small Sites / Projects
-* 🧪 Experiments
-* ℹ️ About
-
----
-
-## 🔄 Navigation Flow
-
-1. User opens the homepage
-2. Navigates between available mini-sites
-3. Explores individual sections
-4. Interacts with content specific to each page
-
----
-
-## 🧱 Project Structure
-
-### ⚛️ Core (React)
-
-* `App.tsx` – main application component
-* `main.tsx` – entry point
-
-### 📄 Pages
-
-* `pages/` – individual mini-sites / views
-
-### 🧩 Components
-
-* `components/` – reusable UI elements
-
-### 🧱 Layout
-
-* `layout/` – shared structure (navbar, wrappers, etc.)
-
-### 🖼️ Assets
-
-* `assets/` / `img/` – static files
+* 🎞️ AnimateSite – animation experiments (anime.js)
+* 🧮 CalcSite – simple calculator
+* 🃏 CardSite – card UI interactions
+* 🕒 ClockSite – clock implementation
+* ☁️ CloudSite – visual/animation concept
+* 🙂 FaceSite – CSS-based face design
+* ❤️ HeartBeatSite – heartbeat animation
+* 💡 LampSite – light/dark interaction concept
+* 🔐 LoginSite – login form UI
+* 🖱️ MouseSite – cursor interaction effects
+* 🌙 NightSite – night-themed visuals
+* 📜 OnePoemSite – minimal content layout
+* 🧱 OrdinarySite – basic layout structure
+* 💬 QuoteSite – quote generator
+* 📜 ScrollSite – scrolling effects
+* ✅ ToDoListSite – simple to-do app
+* ⌨️ TypingSite – typing animation
 
 ---
 
-## ▶️ How to Run
+## 🖥️ How to Use
+
+1. Download or clone the repository:
 
 ```bash
 git clone https://github.com/oskarjaslowski/smallsites.git
-cd smallsites
-npm install
-npm run dev
 ```
 
-App runs on:
+2. Open any project folder
+3. Run the `index.html` file in your browser
 
-```
-http://localhost:5173
-```
+No build tools or installation required.
 
 ---
 
 ## 📦 Technologies
 
-* React
-* TypeScript
-* Vite
-* CSS
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
+* anime.js (in selected projects)
+
+---
+
+## 🧱 Project Structure
+
+Each folder is an independent project:
+
+```
+SmallSites/
+  ├── AnimateSite/
+  ├── CalcSite/
+  ├── CardSite/
+  ├── ClockSite/
+  ├── ...
+```
+
+Every mini-site typically includes:
+
+* `index.html`
+* `style.css`
+* `script.js` / `main.js` (optional)
+* assets (images/icons if needed)
 
 ---
 
@@ -120,11 +96,19 @@ This project is for personal and educational use.
 
 ---
 
-## 💡 Future Improvements
+## 💡 Purpose
 
-* 🌐 Add more mini-sites / modules
-* 🎨 Improve UI consistency across sections
-* 🔍 Better navigation and organization
-* 📱 Responsive design improvements
-* ⚙️ Optional backend integration
-* 🧪 More experimental features and layouts
+This repository serves as:
+
+* a playground for front-end experiments
+* a collection of small UI/UX ideas
+* a way to practice and improve JavaScript and CSS skills
+
+---
+
+## 🚀 Future Ideas
+
+* Add more mini-sites
+* Improve code consistency across projects
+* Create a central index page linking all sites
+* Refactor selected projects into React versions
